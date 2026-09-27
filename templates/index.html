@@ -8,19 +8,55 @@
 </head>
 
 <body>
+
     <div class="container">
+
         <h1>EduGenie</h1>
         <p class="subtitle">AI-Powered Learning Assistant</p>
 
+        <!-- ASK -->
         <div class="card">
-            <input id="question" type="text" placeholder="Ask EduGenie anything...">
-
-            <button onclick="askQuestion()">Ask EduGenie</button>
-
-            <div id="answer"></div>
+            <h2>💬 Ask EduGenie</h2>
+            <input id="question" type="text" placeholder="Ask a question...">
+            <button onclick="askQuestion()">Ask</button>
+            <div id="answer" class="result"></div>
         </div>
+
+        <!-- EXPLAIN -->
+        <div class="card">
+            <h2>💡 Explain a Concept</h2>
+            <input id="explainTopic" type="text" placeholder="Enter a topic...">
+            <button onclick="explainTopic()">Explain</button>
+            <div id="explainResult" class="result"></div>
+        </div>
+
+        <!-- SUMMARIZE -->
+        <div class="card">
+            <h2>📝 Summarize</h2>
+            <textarea id="summaryText" placeholder="Paste text to summarize..."></textarea>
+            <button onclick="summarizeText()">Summarize</button>
+            <div id="summaryResult" class="result"></div>
+        </div>
+
+        <!-- QUIZ -->
+        <div class="card">
+            <h2>🧠 Generate Quiz</h2>
+            <input id="quizTopic" type="text" placeholder="Enter a topic...">
+            <button onclick="generateQuiz()">Generate Quiz</button>
+            <div id="quizResult" class="result"></div>
+        </div>
+
+        <!-- LEARNING PATH -->
+        <div class="card">
+            <h2>🗺️ Learning Path</h2>
+            <input id="learningTopic" type="text" placeholder="What do you want to learn?">
+            <button onclick="generateLearningPath()">Create Learning Path</button>
+            <div id="learningResult" class="result"></div>
+        </div>
+
     </div>
 
     <script src="/static/script.js"></script>
+
 </body>
 </html>
